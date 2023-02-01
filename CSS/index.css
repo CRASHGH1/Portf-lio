@@ -1,0 +1,408 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/*menu*/
+
+.Menu{
+    border-bottom: 2px solid rgb(37, 37, 37);
+    background-color: rgb(20, 20, 20);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 89vh);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.Menu a{
+    text-decoration: none;
+    color: rgb(231, 234, 236);
+    font-size: 17px;
+    letter-spacing: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+}
+.menu-nav{
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+}
+.logo{
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+}
+.logo:hover{
+    color:rgb(52, 147, 241);
+    transition: 0.5s;
+}
+
+/*tela inicial*/
+
+.Sessao-1{
+    background-color: rgb(18, 18, 18);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.apresentar{
+    margin-top: 40px;
+    width: 540px;
+    margin-left: -50px;
+}
+.apresentar h1{
+    font-size: 50px;
+    color:dodgerblue;
+    margin-top: 20px;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+.apresentar h1::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscar .9s infinite;
+}
+@keyframes piscar{
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.apresentar h2{
+    font-weight:initial;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    opacity: 0.8;
+    letter-spacing: 0;
+}
+.apresentar-rigth{
+    margin-left: -200px;
+    opacity: 0.7;
+}
+.buttons{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+.buttons a{
+    text-decoration: none;
+    color:aliceblue;
+    margin-left: 10px;
+}
+#btn-1 a{
+    gap: 10px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    animation: gradient .99s infinite;
+    border: 2px solid rgba(30, 143, 255, 0.63);
+}
+#btn-2 a{
+    gap: 10px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    animation: gradient .99s infinite;
+    border: 2px solid rgba(30, 143, 255, 0.63);
+}
+#btn-1, a #btn-2, a:hover{
+    color:rgb(228, 228, 157);
+    transition: 1s;
+}
+@keyframes gradient{
+    0%{
+        border: 2px solid rgba(30, 143, 255, 0.63);
+    }
+    50%{
+        border: 2px solid rgba(13, 13, 207, 0.568);
+    }
+}
+
+/*sobre*/
+
+.Sessao-2{
+    background-color: rgb(22, 22, 22);
+    height: 450px;
+    width: 100%;
+    align-items: center;
+}
+.Sessao-2 hr{
+    margin-top: 50px;
+    width: 800px;
+    border-color: dodgerblue;
+    border-radius: 100%;
+}
+.conteudo-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 340px;
+    margin-left: 340px;
+}
+.conteudo-2 div{
+    margin-top: 30px;
+}
+.logo-2 img{
+    height: 230px;
+    margin-top: 60px;
+}
+#sobre {
+    margin-left: 30px;
+}
+#sobre h2{
+    margin-top: 50px;
+    border-bottom: -20px;
+    font-size: 25px;
+    font-weight:initial;
+    opacity: 0.8;
+    letter-spacing: 0;
+}
+#sobre h5{
+    font-weight:initial;
+    font-size: 20px;
+    opacity: 0.8;
+    letter-spacing: 0;
+    margin-top: -10px;
+}
+#sobre p{
+    height: 120px;
+    width: 400px;
+    font-weight:initial;
+    font-size: 20px;
+    opacity: 0.8;
+    letter-spacing: 0;
+}
+
+/*experiencia*/
+
+.Sessao-3{
+    background-color: rgb(18, 18, 18);
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+    position: absolute;
+}
+.conteudo-3{
+    margin-top: 75px;
+}
+.Sessao-3 li{
+    list-style: none;
+    margin-bottom: 15px;
+    height: 55px;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-weight:initial;
+    opacity: 0.8;
+    letter-spacing: 0;
+}
+.Sessao-3 li::before {
+    content: "•"; color: dodgerblue;
+    display: inline-block; width: 2em;
+    margin-left: -2em;
+    animation: pisca .99s infinite;
+}
+@keyframes pisca{
+    0%{
+        color: dodgerblue;
+    }
+    50%{
+        color: black;
+    }
+}
+
+/*projetos*/
+
+.Sessao-4{
+    background-color: rgb(22, 22, 22);
+    height: 1150px;
+    width: 100%;
+    text-align: center;
+    margin-top: 430px;
+    position: absolute;
+}
+.conteudo-4 h1{
+    margin-top: 150px;
+}
+.projetos{
+    margin-top: 50px;
+    text-align: center;
+}
+.conteudo-1-3-projeto{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.conteudo-2-3-projeto{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.conteudo-3-3-projeto{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    display: none;
+}
+.tela{
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    height: 100px;
+    width: 200px;
+
+}
+.btn{
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight:initial;
+    opacity: 0.8;
+    letter-spacing: 0;
+}
+#letr h3{
+    font-weight:initial;
+    letter-spacing: 0;
+}
+
+#letr h6{
+    font-weight:initial;
+    opacity: 0.8;
+    letter-spacing: 0;
+}
+
+/*final*/
+
+/*Responsivo 1270px*/
+
+@media (max-width: 1200px){
+
+    .apresentar{
+        align-items: center;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 200px;
+    }
+
+    .buttons{
+        margin-left: 80px;
+    }
+
+}
+
+@media (max-width: 890px){
+    
+    .apresentar-rigth{
+        display: none;
+    }
+
+    .Sessao-2 hr{
+        width: 550px;
+    }
+
+    .Sessao-3 li{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .apresentar{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 700px){
+
+
+
+    .Sessao-3 li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tela{
+        height: 80px;
+        width: 150px;
+    }
+
+    .tela img{
+        height: 80px;
+        width: 150px;
+    }
+
+    .logo-2 img{
+        display: none;
+    }
+
+    .apresentar{
+        margin-left: 0;
+    }
+
+    .conteudo-2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #sobre {
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #sobre p{
+        height: 150px;
+        width: 450px;
+    }
+
+    .Sessao-2 hr{
+        width: 400px;
+    }
+
+    .apresentar h1{
+        font-size: 37px;
+    }
+    .apresentar h2{
+        font-size: 23px;
+    }
+    .buttons{
+        margin-left: 81px;
+        margin-right: 60px;
+    }
+
+    .conteudo-3 li{
+        font-size: 14px;
+        margin: 20px 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .conteudo-3 h1{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 566px){
+    .buttons{
+       margin-left: 50px;
+       margin-right: 50px;
+    }
+
+    .menu-nav{
+        display: flex;
+        gap: 10px;
+        font-weight: bold;
+    }
+}
