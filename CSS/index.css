@@ -395,8 +395,6 @@ body{
 }
 
 @media (max-width: 566px){
-    .buttons{
-    }
 
     .menu-nav{
         display: flex;
